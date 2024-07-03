@@ -8,7 +8,7 @@ const Header = () => {
     const cartItemsCount = useSelector(state => state.cart.length);
 
     return (
-        <header className="bg-gray-800 text-white p-4">
+        <header className="bg-gray-800 text-white p-4 fixed w-full top-0 z-50">
             <div className="container mx-auto flex justify-between items-center">
                 <Link to="/" className="text-2xl font-bold">
                     E-Commerce
