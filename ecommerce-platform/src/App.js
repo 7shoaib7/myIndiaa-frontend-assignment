@@ -1,9 +1,11 @@
-import React from 'react';
+import React ,{lazy}from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import ProductListing from './components/ProductListing';
-import Cart from './components/Cart';
+const ProductListing = lazy(() => import('./components/ProductListing'));
+const Cart = lazy(() => import('./components/Cart'));
+
+
 
 const App = () => {
   return (
